@@ -29,7 +29,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  /* display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between; */
 }
 
 h1 {
@@ -37,9 +40,45 @@ h1 {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
+  padding: 0 5%;
+  /* text-align: center;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch; */
+}
+
+.container1 {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 5%;
+  text-align: center;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.container1 h2 {
+  font-size: 2.25rem;
+  color: #87629a;
+}
+
+.container2 {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 5%;
+  text-align: center;
+  background-color: #136c72;
+  color: white;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.container2 h2 {
+  font-size: 2.25rem;
 }
 
 .row {
@@ -56,7 +95,7 @@ h1 {
 }
 
 .hero {
-  padding: 100px 0;
+  padding: 100px;
   background-color: #23424a;
   color: #fff;
 }
@@ -65,8 +104,17 @@ h1 {
   width: 60%;
 }
 
+.hero__text > h1 {
+  font-size: 3rem;
+}
+
+.hero > .container {
+  text-align: left;
+}
+
 .hero p {
   margin-bottom: 3em;
+  font-size: 1.3125rem;
 }
 
 .btn {
@@ -78,6 +126,7 @@ h1 {
   background-color: #38cfd9;
   padding: 0.75em 2em;
   border-radius: 100px;
+  text-align: center;
 }
 
 .btn:hover,
