@@ -30,55 +30,68 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  /* display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between; */
+  display: grid;
+  grid: 2fr 1fr 1fr / 1fr;
+  block-size: 100%;
 }
 
 h1 {
   font-size: 3rem;
 }
 
-.container {
-  width: 100%;
-  max-width: 1100px;
-  padding: 0 5%;
-  /* text-align: center;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: stretch; */
-}
-
 .container1 {
   display: flex;
+  justify-content: center;
+  inline-size: 100%;
+  padding: 0 6.25rem; /* 100px */
+  align-items: center;
+}
+
+.container1 .row {
+  display: flex;
   width: 100%;
-  max-width: 1100px;
-  padding: 0 5%;
+  max-width: 68.75rem; /* 1100px */
+  /* padding: 0 5%; */
   text-align: center;
   flex-flow: row nowrap;
+  justify-self: center;
   justify-content: space-around;
   align-items: stretch;
 }
 
+.container1 .col {
+  max-width: 22rem;
+}
+
 .container1 h2 {
-  font-size: 2.25rem;
+  font-size: 2.25rem; /* 36px */
   color: #87629a;
 }
 
 .container2 {
   display: flex;
-  width: 100%;
-  max-width: 1100px;
-  padding: 0 5%;
-  text-align: center;
+  inline-size: 100%;
   background-color: #136c72;
   color: white;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: center;
+}
+.container2 .row {
+  display: flex;
+  width: 100%;
+  max-width: 68.75rem; /* 1100px */
+  padding: 0 6.25rem; /* 100px */
+  text-align: center;
+  justify-self: center;
+  column-gap: 5rem;
+}
+
+.container2 .col {
+  max-width: 32rem;
 }
 
 .container2 h2 {
-  font-size: 2.25rem;
+  font-size: 2.25rem; /* 36px */
 }
 
 .row {
@@ -95,7 +108,9 @@ h1 {
 }
 
 .hero {
-  padding: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 6.25rem; /* 100px */
   background-color: #23424a;
   color: #fff;
 }
@@ -110,6 +125,7 @@ h1 {
 
 .hero > .container {
   text-align: left;
+  max-inline-size: 68.75rem;
 }
 
 .hero p {
