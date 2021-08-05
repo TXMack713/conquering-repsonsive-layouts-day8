@@ -33,6 +33,13 @@ body {
   display: grid;
   grid: 2fr 1fr 1fr / 1fr;
   block-size: 100%;
+  word-break: keep-all;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 h1 {
